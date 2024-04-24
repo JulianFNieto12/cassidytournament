@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor {
+    padding: 20px;
+    color: black;
+    text-align: center; /* Para centrar el texto horizontalmente */
+    position: absolute;
+    top: 50%; /* Para centrar verticalmente */
+    left: 50%; /* Para centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar correctamente */
+}
+
+#txtPrincipal {
+    font-size: 100px; /* Cambia el tamaño de letra */
+    font-family: "Grandstander", cursive;
+}
+
+#contador{
+    font-size: 50px;
+    font-family: "Grandstander", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+    #txtPrincipal {
+        font-size: 55px;
+    }
+
+    #contador {
+        font-size: 18px;
+    }
+}
